@@ -1,6 +1,5 @@
 import express from "express";
 import gplay from "google-play-scraper";
-import util from "util";
 import ApkReader from "node-apk-parser";
 
 const server = express();
@@ -13,7 +12,7 @@ server.get("/app:keyword", (req, res) => {
   gplay
     .search({
       term: keyword,
-      num: 2
+      num: 6
     })
     .then(resolve => {
       return res.status(200).json({
