@@ -1,0 +1,14 @@
+{
+  "name": "comparadorJS",
+  "version": "1.0.0",
+  "main": "index.js",
+  "license": "MIT",
+  "scripts": {
+    "dev": "nodemon src/index.js"
+  },
+  "devDependencies": {
+    "express": "^4.17.1",
+    "nodemon": "^2.0.0",
+    "sucrase": "^3.10.1"
+  }
+}
