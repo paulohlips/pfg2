@@ -18,6 +18,7 @@ import { MatCardModule } from '@angular/material/card';
 import { MatListModule, MatList } from '@angular/material/list';
 import { MatDividerModule} from '@angular/material/divider'; 
 import { DialogContentService } from './services/dialog-content.service';
+import { ComparatorComponent } from './comparator/comparator.component';
 
 
 
@@ -27,6 +28,7 @@ import { DialogContentService } from './services/dialog-content.service';
     ScraperComponent,
     AnalyzerComponent,
     DialogContentComponent,
+    ComparatorComponent,
   ],
   entryComponents: [
       DialogContentComponent
