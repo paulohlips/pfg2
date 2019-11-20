@@ -1,0 +1,48 @@
+<mat-toolbar>
+    <span class="pi pi-star"></span>
+    <h1>PFG Deus no Comando</h1>
+</mat-toolbar>
+<div id="content">
+    <br>
+    <div style="text-align: center;">
+        <div>
+            <h5>
+                Digite aqui o nome do aplicativo que deseja buscar as 
+                informações de Manifest se estes estão de acordo com o analisado pelo <i>Scraper</i>
+            </h5>
+        </div>
+        <div style="display:inline-block;">
+            <input type="text" pInputText [(ngModel)]="appIdInput" placeholder="com.uber.cab" />
+            <p-button icon="pi pi-search" (click)="onClick()"></p-button>
+        </div>
+    </div>
+    <br>
+    <div *ngIf="showQueryResults">
+        <div class="p-grid">
+            <div *ngFor='let app of apps' class="p-col-4">
+                <mat-card>
+                    <mat-card-header>
+                        <mat-card-title>{{ app.title }}</mat-card-title>
+                        <mat-card-subtitle><b>App ID:</b>{{ app.appId }}</mat-card-subtitle>
+                    </mat-card-header>
+                    <mat-card-content>
+                        <div class="p-grid">
+                            <div class= "p-col-3">
+                                <mat-list-item><img style="object-fit: cover; max-width: 100%;" src= "{{ app.icon }}" /></mat-list-item>
+                            </div>
+                            <div class= "p-col-9">
+                                <mat-list-item><b>Desenvolvedor:</b> {{ app.developer }}</mat-list-item>
+                                <mat-list-item><b>Score:</b> {{ app.scoreText }}</mat-list-item>
+                            </div>
+                        </div>
+                        <mat-list>
+                        </mat-list>
+                    </mat-card-content>
+                    <mat-card-actions style="text-align: right;">
+                        <p-button label="Ver Detalhes" icon="pi pi-external-link" iconPos="right" (click)="openDialog(app.appId,app.icon,app.title)"></p-button>
+                    </mat-card-actions>
+                </mat-card>
+            </div>
+        </div>
+    </div>
+</div>

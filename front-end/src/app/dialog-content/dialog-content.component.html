@@ -1,0 +1,23 @@
+<mat-card style="background-color: #E5F1FB;">
+    <mat-card-content>
+        <div class="p-grid">
+            <div class="p-col-4 p-justify-end" style="">
+                <img style="object-fit: cover; max-width: 20%;" src="{{ appPhoto }}" />
+            </div>
+            <div class="p-col-8 p-col-align-center" style="font-size: medium;">
+                <b>Nome do aplicativo: </b>{{ appName }}
+                <br>
+                <b>ID do aplicativo: </b>{{ appId }}
+            </div>
+        </div>
+    </mat-card-content>
+</mat-card>
+<br>
+<div class="p-grid">
+    <div class="p-col-6">
+        <app-analyzer [appId]=appId></app-analyzer>
+    </div>
+    <div class="p-col-6">
+        <app-scraper [appId]=appId></app-scraper>
+    </div>
+</div>

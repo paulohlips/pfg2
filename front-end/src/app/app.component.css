@@ -1,0 +1,13 @@
+#content{
+    background: white;
+    border-radius: 10px;
+    padding: 20px;
+    width: auto;
+    height: auto;
+    margin: 2em;
+}
+
+mat-card{
+    background-color: #E5F1FB;
+    /* Cor do botão: #99C8EF */
+}
