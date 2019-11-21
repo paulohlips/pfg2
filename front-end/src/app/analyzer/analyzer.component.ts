@@ -9,7 +9,7 @@ import { analyzerContent } from '../models/analyzer-content.model';
 })
 export class AnalyzerComponent implements OnInit {
 
-    @Input() appId: string;
+    @Input() appPath: string;
     private postContent: any;
     public postReturn: analyzerContent;
     public postReturnLength: number;
@@ -20,12 +20,11 @@ export class AnalyzerComponent implements OnInit {
 
     ngOnInit() {
         this.postContent = {
-            appId: this.appId,
+            appId: this.appPath,
         };
-        this.analyzerContentService.postApp().subscribe(appDetails => {
+        this.analyzerContentService.postApp(this.appPath).subscribe(appDetails => {
             this.postReturn = appDetails.permissions;
             this.postReturnLength = appDetails.permissions.length;
-            console.log("postReturn:", this.postReturn);
         });
     }
 

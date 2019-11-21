@@ -15,9 +15,13 @@
 <br>
 <div class="p-grid">
     <div class="p-col-6">
-        <app-analyzer [appId]=appId></app-analyzer>
-    </div>
-    <div class="p-col-6">
         <app-scraper [appId]=appId></app-scraper>
     </div>
+    <div class="p-col-6">
+        <app-analyzer [appPath]=appPath></app-analyzer>
+    </div>
 </div>
+<div class="p-grid">
+    <div class="p-col-12">
+        <app-manifest-filter></app-manifest-filter>
+    </div>

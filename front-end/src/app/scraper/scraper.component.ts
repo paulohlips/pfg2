@@ -25,7 +25,6 @@ export class ScraperComponent implements OnInit {
         this.scraperContentService.postApp(this.postContent).subscribe(appDetails => {
             this.postReturn = appDetails.resultado;
             this.postReturnLength = appDetails.resultado.length;
-            console.log("postReturn:", this.postReturn);
         });
     }
 }

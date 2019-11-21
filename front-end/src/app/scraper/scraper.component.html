@@ -1,11 +1,12 @@
 <mat-card style="background-color: #E5F1FB">
     <mat-card-header>
-            <!-- <mat-card-subtitle><b>Quantidade de permissões solicitadas:</b>
+        <!-- <mat-card-subtitle><b>Quantidade de permissões solicitadas:</b>
                 <div *ngFor='let appDetails of postReturn; let i = index'>{{ i+1 }}</div>
             </mat-card-subtitle> -->
-            <mat-card-title><b>Quantidade de permissões solicitadas: </b>{{ postReturnLength }}</mat-card-title>
+        <mat-card-title><b>Scraper: Quantidade de permissões solicitadas: </b>{{ postReturnLength }}</mat-card-title>
     </mat-card-header>
-    <mat-card-content>
+    <mat-divider [inset]="true"></mat-divider>
+    <mat-card-content [style.overflow]="'auto'" [style.height.px]="'300'">
         <div *ngFor='let appDetails of postReturn;'>
             <br>
             <mat-list-item><b>Permissão: </b>{{ appDetails.permission }}</mat-list-item>

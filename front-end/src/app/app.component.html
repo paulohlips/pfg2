@@ -5,15 +5,33 @@
 <div id="content">
     <br>
     <div style="text-align: center;">
-        <div>
-            <h5>
-                Digite aqui o nome do aplicativo que deseja buscar as 
-                informações de Manifest se estes estão de acordo com o analisado pelo <i>Scraper</i>
-            </h5>
-        </div>
-        <div style="display:inline-block;">
-            <input type="text" pInputText [(ngModel)]="appIdInput" placeholder="com.uber.cab" />
-            <p-button icon="pi pi-search" (click)="onClick()"></p-button>
+        <div class="p-grid">
+            <div class="p-offset-2 p-col-4">
+                <div>
+                    <h5>
+                        Digite aqui o nome do aplicativo que deseja buscar as
+                        informações de Manifest se estes estão de acordo com o analisado pelo <i>Scraper</i>
+                    </h5>
+                </div>
+                <div style="display:inline-block;">
+                    <input type="text" pInputText [(ngModel)]="appIdInput"
+                        placeholder="Uber, Banco do Brasil, Facebook ..." />
+                    <p-button icon="pi pi-search" (click)="onClick()"></p-button>
+                </div>
+            </div>
+            <div class="p-col-4">
+                <div>
+                    <h5>
+                        Digite aqui o caminho até o diretório local onde está o aplicativo, de extensão .apk,
+                        que se deseja analisar.
+                    </h5>
+                </div>
+                <div style="display:inline-block;">
+                    <input type="text" pInputText [(ngModel)]="appPathInput"
+                        placeholder="C:/Usuários/.../aplicativo.apk" />
+                    <p-button icon="pi pi-search" (click)="onClick()"></p-button>
+                </div>
+            </div>
         </div>
     </div>
     <br>
@@ -27,10 +45,11 @@
                     </mat-card-header>
                     <mat-card-content>
                         <div class="p-grid">
-                            <div class= "p-col-3">
-                                <mat-list-item><img style="object-fit: cover; max-width: 100%;" src= "{{ app.icon }}" /></mat-list-item>
+                            <div class="p-col-3">
+                                <mat-list-item><img style="object-fit: cover; max-width: 100%;" src="{{ app.icon }}" />
+                                </mat-list-item>
                             </div>
-                            <div class= "p-col-9">
+                            <div class="p-col-9">
                                 <mat-list-item><b>Desenvolvedor:</b> {{ app.developer }}</mat-list-item>
                                 <mat-list-item><b>Score:</b> {{ app.scoreText }}</mat-list-item>
                             </div>
@@ -39,7 +58,8 @@
                         </mat-list>
                     </mat-card-content>
                     <mat-card-actions style="text-align: right;">
-                        <p-button label="Ver Detalhes" icon="pi pi-external-link" iconPos="right" (click)="openDialog(app.appId,app.icon,app.title)"></p-button>
+                        <p-button label="Ver Detalhes" icon="pi pi-external-link" iconPos="right"
+                            (click)="openDialog(app.appId,app.icon,app.title)"></p-button>
                     </mat-card-actions>
                 </mat-card>
             </div>

@@ -12,6 +12,7 @@ export class DialogContentComponent implements OnInit {
     appName: string;
     appId: string;
     appPhoto: string;
+    appPath: string;
 
     constructor(
         public dialogRef: MatDialogRef<DialogContentComponent>,
@@ -20,6 +21,7 @@ export class DialogContentComponent implements OnInit {
         this.appName = data.appName;
         this.appId = data.appId;
         this.appPhoto = data.appPhoto;
+        this.appPath = data.appPath;
     }
 
 

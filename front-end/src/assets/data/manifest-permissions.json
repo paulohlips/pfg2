@@ -1,0 +1,269 @@
+{
+    "permissionList": [
+        {
+            "permission": "android.permission.ACTIVITY_RECOGNITION",
+            "protectionLevel": ["dangerous, instant"],
+            "groupTitle": "ACTIVITY_RECOGNITION"
+        },
+        {
+            "permission": "android.permission.READ_CALENDAR",
+            "protectionLevel": ["dangerous"],
+            "groupTitle": "CALENDAR"
+        },
+        {
+            "permission": "android.permission.WRITE_CALENDAR",
+            "protectionLevel": ["dangerous"],
+            "groupTitle": "CALENDAR"
+        },
+        {
+            "permission": "android.permission.READ_CALL_LOG",
+            "protectionLevel": ["dangerous"],
+            "groupTitle": "CALL_LOG"
+        },
+        {
+            "permission": "android.permission.WRITE_CALL_LOG",
+            "protectionLevel": ["dangerous"],
+            "groupTitle": "CALL_LOG"
+        },
+        {
+            "permission": "android.permission.PROCESS_OUTGOING_CALLS",
+            "protectionLevel": ["dangerous"],
+            "groupTitle": "CALL_LOG"
+        },
+        {
+            "permission": "android.permission.CAMERA",
+            "protectionLevel": ["dangerous","instant"],
+            "groupTitle": "CAMERA"
+        },
+        {
+            "permission": "android.permission.READ_CONTACTS",
+            "protectionLevel": ["dangerous"],
+            "groupTitle": "CONTACTS"
+        },
+        {
+            "permission": "android.permission.WRITE_CONTACTS",
+            "protectionLevel": ["dangerous"],
+            "groupTitle": "CONTACTS"
+        },
+        {
+            "permission": "android.permission.ACCESS_BACKGROUND_LOCATION",
+            "protectionLevel": ["dangerous","instant"],
+            "groupTitle": "LOCATION"
+        },
+        {
+            "permission": "android.permission.ACCESS_COARSE_LOCATION",
+            "protectionLevel": ["dangerous","instant"],
+            "groupTitle": "LOCATION"
+        },
+        {
+            "permission": "android.permission.ACCESS_FINE_LOCATION",
+            "protectionLevel": ["dangerous","instant"],
+            "groupTitle": "LOCATION"
+        },
+        {
+            "permission": "android.permission.ACCESS_LOCATION_EXTRA_COMMANDS",
+            "protectionLevel": ["normal"],
+            "groupTitle": "LOCATION"
+        },
+        {
+            "permission": "android.permission.RECORD_AUDIO",
+            "protectionLevel": ["dangerous","instant"],
+            "groupTitle": "MICROPHONE"
+        },
+        {
+            "permission": "android.permission.ACCESS_UCE_PRESENCE_SERVICE",
+            "protectionLevel": ["signature","privileged"],
+            "groupTitle": "PHONE"
+        },
+        {
+            "permission": "android.permission.ACCESS_UCE_OPTIONS_SERVICE",
+            "protectionLevel": ["signature","privileged"],
+            "groupTitle": "PHONE"
+        },
+        {
+            "permission": "android.permission.READ_PHONE_STATE",
+            "protectionLevel": ["dangerous"],
+            "groupTitle": "PHONE"
+        },
+        {
+            "permission": "android.permission.READ_PHONE_NUMBERS",
+            "protectionLevel": ["dangerous","instant"],
+            "groupTitle": "PHONE"
+        },
+        {
+            "permission": "android.permission.CALL_PHONE",
+            "protectionLevel": ["dangerous"],
+            "groupTitle": "PHONE"
+        },
+        {
+            "permission": "android.permission.ADD_VOICEMAIL",
+            "protectionLevel": ["dangerous"],
+            "groupTitle": "PHONE"
+        },
+        {
+            "permission": "android.permission.USE_SIP",
+            "protectionLevel": ["dangerous"],
+            "groupTitle": "PHONE"
+        },
+        {
+            "permission": "android.permission.ANSWER_PHONE_CALLS",
+            "protectionLevel": ["dangerous","runtime"],
+            "groupTitle": "PHONE"
+        },
+        {
+            "permission": "android.permission.MANAGE_OWN_CALLS",
+            "protectionLevel": ["normal"],
+            "groupTitle": "PHONE"
+        },
+        {
+            "permission": "android.permission.CALL_COMPANION_APP",
+            "protectionLevel": ["normal"],
+            "groupTitle": "PHONE"
+        },
+        {
+            "permission": "android.permission.ACCEPT_HANDOVER",
+            "protectionLevel": ["dangerous"],
+            "groupTitle": "PHONE"
+        },
+        {
+            "permission": "android.permission.BODY_SENSORS",
+            "protectionLevel": ["dangerous"],
+            "groupTitle": "SENSORS"
+        },
+        {
+            "permission": "android.permission.USE_FINGERPRINT",
+            "protectionLevel": ["normal"],
+            "groupTitle": "SENSORS"
+        },
+        {
+            "permission": "android.permission.USE_BIOMETRIC",
+            "protectionLevel": ["normal"],
+            "groupTitle": "SENSORS"
+        },
+        {
+            "permission": "android.permission.READ_SMS",
+            "protectionLevel": ["dangerous"],
+            "groupTitle": "SMS"
+        },
+        {
+            "permission": "android.permission.RECEIVE_SMS",
+            "protectionLevel": ["dangerous"],
+            "groupTitle": "SMS"
+        },
+        {
+            "permission": "android.permission.SEND_SMS",
+            "protectionLevel": ["dangerous"],
+            "groupTitle": "SMS"
+        },
+        {
+            "permission": "android.permission.RECEIVE_WAP_PUSH",
+            "protectionLevel": ["dangerous"],
+            "groupTitle": "SMS"
+        },
+        {
+            "permission": "android.permission.RECEIVE_MMS",
+            "protectionLevel": ["dangerous"],
+            "groupTitle": "SMS"
+        },
+        {
+            "permission": "android.permission.BIND_CELL_BROADCAST_SERVICE",
+            "protectionLevel": ["dangerous"],
+            "groupTitle": "SMS"
+        },
+        {
+            "permission": "android.permission.READ_CELL_BROADCASTS",
+            "protectionLevel": ["dangerous"],
+            "groupTitle": "SMS"
+        },
+        {
+            "permission": "android.permission.SMS_FINANCIAL_TRANSACTIONS",
+            "protectionLevel": ["signature","appop"],
+            "groupTitle": "SMS"
+        },
+        {
+            "permission": "android.permission.READ_EXTERNAL_STORAGE",
+            "protectionLevel": ["dangerous"],
+            "groupTitle": "STORAGE"
+        },
+        {
+            "permission": "android.permission.WRITE_EXTERNAL_STORAGE",
+            "protectionLevel": ["dangerous"],
+            "groupTitle": "STORAGE"
+        },
+        {
+            "permission": "android.permission.ACCESS_MEDIA_LOCATION",
+            "protectionLevel": ["dangerous"],
+            "groupTitle": "STORAGE"
+        },
+        {
+            "permission": "android.permission.WRITE_OBB",
+            "protectionLevel": ["signature","privileged"],
+            "groupTitle": "STORAGE"
+        },
+        {
+            "permission": "android.permission.INTERNET",
+            "protectionLevel": ["normal","instant"],
+            "groupTitle": "NETWORK"
+        },
+        {
+            "permission": "android.permission.ACCESS_NETWORK_STATE",
+            "protectionLevel": ["normal","instant"],
+            "groupTitle": "NETWORK"
+        },
+        {
+            "permission": "android.permission.ACCESS_WIFI_STATE",
+            "protectionLevel": ["normal"],
+            "groupTitle": "NETWORK"
+        },
+        {
+            "permission": "android.permission.CHANGE_WIFI_STATE",
+            "protectionLevel": ["normal"],
+            "groupTitle": "NETWORK"
+        },
+        {
+            "permission": "android.permission.BLUETOOTH",
+            "protectionLevel": ["normal"],
+            "groupTitle": "NETWORK"
+        },
+        {
+            "permission": "android.permission.SUSPEND_APPS",
+            "protectionLevel": ["signature","weelbeing"],
+            "groupTitle": "NETWORK"
+        },
+        {
+            "permission": "android.permission.BLUETOOTH_ADMIN",
+            "protectionLevel": ["normal"],
+            "groupTitle": "NETWORK"
+        },
+        {
+            "permission": "android.permission.BLUETOOTH_PRIVILEGED",
+            "protectionLevel": ["signature","privileged"],
+            "groupTitle": "NETWORK"
+        },
+        {
+            "permission": "android.permission.BLUETOOTH_MAP",
+            "protectionLevel": ["signature"],
+            "groupTitle": "NETWORK"
+        },
+        {
+            "permission": "android.permission.BLUETOOTH_STACK",
+            "protectionLevel": ["signature"],
+            "groupTitle": "NETWORK"
+        },
+        {
+            "permission": "android.permission.NFC",
+            "protectionLevel": ["normal"],
+            "groupTitle": "NETWORK"
+        },
+        {
+            "permission": "android.permission.NFC_TRANSACTION_EVENT",
+            "protectionLevel": ["normal"],
+            "groupTitle": "NETWORK"
+        },
+        {
+            "permission": "android.permission.GET_ACCOUNTS",
+            "protectionLevel": ["dangerous"],
+            "groupTitle": "ACCOUNT"
+        }
+    ]
+}

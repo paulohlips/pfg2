@@ -13,6 +13,7 @@ export class AppComponent implements OnInit {
     // apps: dialogContent;
     public apps: [];
     public appIdInput: string;
+    public appPathInput: string;
     public showQueryResults: boolean;
     
     constructor(
@@ -34,7 +35,7 @@ openDialog(appIdParam: any, appPhotoParam: any, appNameParam: any){
         dialogConfig.autoFocus = true;
         dialogConfig.width = "80%";
         dialogConfig.height = "90%";
-        dialogConfig.data = {appId: appIdParam, appPhoto: appPhotoParam, appName: appNameParam};
+        dialogConfig.data = {appId: appIdParam, appPhoto: appPhotoParam, appName: appNameParam, appPath: this.appPathInput};
         // dialogConfig.maxHeight = "80%";
         this.dialog.open(DialogContentComponent, dialogConfig);
     }
