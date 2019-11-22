@@ -6,6 +6,7 @@ import { AppComponent } from './app.component';
 
 import { ScraperComponent } from './scraper/scraper.component';
 import { AnalyzerComponent } from './analyzer/analyzer.component';
+import { ComparatorComponent } from './comparator/comparator.component';
 import { DialogContentComponent} from './dialog-content/dialog-content.component';
 
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
@@ -18,7 +19,6 @@ import { MatCardModule } from '@angular/material/card';
 import { MatListModule, MatList } from '@angular/material/list';
 import { MatDividerModule} from '@angular/material/divider'; 
 import { DialogContentService } from './services/dialog-content.service';
-import { ManifestFilterComponent } from './manifest-filter/manifest-filter.component';
 
 
 
@@ -27,8 +27,8 @@ import { ManifestFilterComponent } from './manifest-filter/manifest-filter.compo
     AppComponent,
     ScraperComponent,
     AnalyzerComponent,
+    ComparatorComponent,
     DialogContentComponent,
-    ManifestFilterComponent,
   ],
   entryComponents: [
       DialogContentComponent

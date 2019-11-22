@@ -1,1 +1,16 @@
-<p>comparator works!</p>
+<div class="p-grid">
+<div *ngFor='let manifestFilter of manifestFilterReturn' class="p-col-6">
+        <mat-card style="background-color: #E5F1FB">
+            <mat-card-header>
+                <mat-card-title><b>Grupo: </b>
+                </mat-card-title>
+            </mat-card-header>
+            <mat-divider [inset]="true"></mat-divider>
+            <mat-card-content [style.overflow]="'auto'" [style.height.px]="'100'">
+                <div>
+                    <mat-list-item><b>Permissões: </b>{{ manifestFilter }}</mat-list-item>
+                </div>
+            </mat-card-content>
+        </mat-card>
+    </div>
+</div>

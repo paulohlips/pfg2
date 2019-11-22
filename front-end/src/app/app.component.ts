@@ -27,7 +27,7 @@ export class AppComponent implements OnInit {
 
     onClick(){
         this.showQueryResults = true;
-        this.dialogContentService.getApps(this.appIdInput).subscribe(result => {this.apps = result.resultado; console.log(result)});
+        this.dialogContentService.getApps(this.appIdInput).subscribe(result => {this.apps = result.resultado;});
     }
     
 openDialog(appIdParam: any, appPhotoParam: any, appNameParam: any){
