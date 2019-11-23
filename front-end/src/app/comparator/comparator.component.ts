@@ -1,6 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import { ManifestFilterContentService } from '../services/manifest-filter-content.service';
 import { manifestFilterContent } from '../models/manifest-filter-content.model';
+import { CommonModule } from '@angular/common';
 
 @Component({
     selector: 'app-comparator',
@@ -19,7 +20,8 @@ export class ComparatorComponent implements OnInit {
 
     ngOnInit() {
         this.manifestFilterContentService.getAppsPermissions().subscribe(manifestFilterReturn => { 
-            this.manifestFilterReturn = manifestFilterReturn.grupos.substring(2);
+            this.manifestFilterReturn = manifestFilterReturn.grupos;
+            this.manifestFilterReturn = this.manifestFilterReturn.substring(2);
             this.manifestFilterReturn = this.manifestFilterReturn.substring(0,this.manifestFilterReturn.length-2);
             this.manifestFilterReturn = this.manifestFilterReturn.split('],[');            
         });

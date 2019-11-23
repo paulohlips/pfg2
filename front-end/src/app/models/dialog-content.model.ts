@@ -3,4 +3,5 @@ export class dialogContent {
     appId: string;
     icon: string;
     developer: string;
+    resultado: any;
 }

@@ -9,6 +9,7 @@ import { AnalyzerComponent } from './analyzer/analyzer.component';
 import { ComparatorComponent } from './comparator/comparator.component';
 import { DialogContentComponent} from './dialog-content/dialog-content.component';
 
+import { CommonModule } from '@angular/common';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { HttpClientModule } from '@angular/common/http';
 import { ButtonModule } from 'primeng/button';
@@ -36,6 +37,7 @@ import { DialogContentService } from './services/dialog-content.service';
   imports: [
     BrowserModule,
     FormsModule,
+    CommonModule,
     BrowserAnimationsModule,
     HttpClientModule,
     ButtonModule,

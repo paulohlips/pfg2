@@ -1,8 +1,5 @@
 export class scraperContent {
     permission: string;
     type: string;    
+    resultado: any;
 }
-
-// export class scrapercontent {
-//     resultado: string;
-// }

@@ -5,18 +5,18 @@
 // }
 
 export class manifestFilterContent {
-    // grupos: [];
-    location: [];
-    microphone: [];
-    calendar: [];
-    camera: [];
-    phone: [];
-    contacts: [];
-    storage: [];
-    sensors: [];
-    sms: [];
-    call_log: [];
-    outros: [];
-    network: [];
-    activity_recognition: [];
+    grupos: [];
+    // location: [];
+    // microphone: [];
+    // calendar: [];
+    // camera: [];
+    // phone: [];
+    // contacts: [];
+    // storage: [];
+    // sensors: [];
+    // sms: [];
+    // call_log: [];
+    // outros: [];
+    // network: [];
+    // activity_recognition: [];
 }

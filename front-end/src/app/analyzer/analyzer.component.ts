@@ -1,3 +1,4 @@
+
 import { Component, OnInit, Input } from '@angular/core';
 import { AnalyzerContentService } from '../services/analyzer-content.service';
 import { analyzerContent } from '../models/analyzer-content.model';
@@ -11,7 +12,7 @@ export class AnalyzerComponent implements OnInit {
 
     @Input() appPath: string;
     private postContent: any;
-    public postReturn: analyzerContent;
+    public postReturn: any;
     public postReturnLength: number;
 
     constructor(

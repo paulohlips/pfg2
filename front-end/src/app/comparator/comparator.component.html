@@ -1,8 +1,44 @@
 <div class="p-grid">
-<div *ngFor='let manifestFilter of manifestFilterReturn' class="p-col-6">
+    <div *ngFor='let manifestFilter of manifestFilterReturn; let in = index' class="p-col-6">
         <mat-card style="background-color: #E5F1FB">
             <mat-card-header>
-                <mat-card-title><b>Grupo: </b>
+                <mat-card-title >
+                    <div *ngIf="in==0">
+                                <b>Grupo: </b>Location
+                    </div>
+                    <div *ngIf="in==1">
+                            <b>Grupo: </b>Camera
+                    </div>
+                    <div *ngIf="in==2">
+                            <b>Grupo: </b>Microphone
+                    </div>
+                    <div *ngIf="in==3">
+                            <b>Grupo: </b>Calendar
+                    </div>
+                    <div *ngIf="in==4">
+                            <b>Grupo: </b>Phone
+                    </div>
+                    <div *ngIf="in==5">
+                            <b>Grupo: </b>Contacts
+                    </div>
+                    <div *ngIf="in==6">
+                            <b>Grupo: </b>Storage
+                    </div>
+                    <div *ngIf="in==7">
+                            <b>Grupo: </b>Sensors
+                    </div>
+                    <div *ngIf="in==8">
+                            <b>Grupo: </b>SMS
+                    </div>
+                    <div *ngIf="in==9">
+                            <b>Grupo: </b>Call_log
+                    </div>
+                    <div *ngIf="in==10">
+                            <b>Grupo: </b>Outros
+                    </div>
+                    <div *ngIf="in==11">
+                            <b>Grupo: </b>Network
+                    </div>                    
                 </mat-card-title>
             </mat-card-header>
             <mat-divider [inset]="true"></mat-divider>
